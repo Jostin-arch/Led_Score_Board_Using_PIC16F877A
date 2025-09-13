@@ -1,0 +1,428 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta> <reloc>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$dist/default/debug\score_count_testy.X.debug.o
+cinit CODE 0 7E6 7E6 1A 2 1
+text1 CODE 0 63E 63E 59 2 1
+text2 CODE 0 697 697 67 2 1
+maintext CODE 0 6FE 6FE E8 2 1
+cstackCOMMON COMMON 1 70 70 B 1 1
+inittext CODE 0 62B 62B 13 2 1
+bssBANK0 BANK0 1 2A 2A 5 1 1
+idataBANK0 CODE 0 621 621 A 2 1
+dataBANK0 BANK0 1 20 20 A 1 1
+bssCOMMON COMMON 1 7B 7B 3 1 1
+config CONFIG 4 2007 2007 1 2 1
+$C:\Users\basti\AppData\Local\Temp\xcAs564.\driver_tmp_12.o
+end_init CODE 0 0 0 3 2 1
+config CONFIG 4 2007 2007 1 2 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 2F-6F 1
+RAM A0-EF 1
+RAM 110-16F 1
+RAM 190-1EF 1
+BANK0 2F-6F 1
+BANK1 A0-EF 1
+BANK2 110-16F 1
+BANK3 190-1EF 1
+CONST 3-620 2
+CONST 800-1FFF 2
+ENTRY 3-620 2
+ENTRY 800-1FFF 2
+IDLOC 2000-2003 2
+CODE 3-620 2
+CODE 800-1FFF 2
+SFR0 0-1F 1
+SFR1 80-9F 1
+SFR2 100-10F 1
+SFR3 180-18F 1
+EEDATA 2100-21FF 2
+STRCODE 3-620 2
+STRCODE 800-1FFF 2
+STRING 3-620 2
+STRING 800-1FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/debug\score_count_testy.X.debug.o
+7E6 cinit CODE >392:C:\Users\basti\AppData\Local\Temp\xcAs564.\driver_tmp_1.s
+7E6 cinit CODE >395:C:\Users\basti\AppData\Local\Temp\xcAs564.\driver_tmp_1.s
+7E6 cinit CODE >466:C:\Users\basti\AppData\Local\Temp\xcAs564.\driver_tmp_1.s
+7E7 cinit CODE >467:C:\Users\basti\AppData\Local\Temp\xcAs564.\driver_tmp_1.s
+7E8 cinit CODE >468:C:\Users\basti\AppData\Local\Temp\xcAs564.\driver_tmp_1.s
+7E9 cinit CODE >469:C:\Users\basti\AppData\Local\Temp\xcAs564.\driver_tmp_1.s
+7EA cinit CODE >470:C:\Users\basti\AppData\Local\Temp\xcAs564.\driver_tmp_1.s
+7EB cinit CODE >471:C:\Users\basti\AppData\Local\Temp\xcAs564.\driver_tmp_1.s
+7EC cinit CODE >472:C:\Users\basti\AppData\Local\Temp\xcAs564.\driver_tmp_1.s
+7ED cinit CODE >473:C:\Users\basti\AppData\Local\Temp\xcAs564.\driver_tmp_1.s
+7EE cinit CODE >474:C:\Users\basti\AppData\Local\Temp\xcAs564.\driver_tmp_1.s
+7EF cinit CODE >475:C:\Users\basti\AppData\Local\Temp\xcAs564.\driver_tmp_1.s
+7F4 cinit CODE >479:C:\Users\basti\AppData\Local\Temp\xcAs564.\driver_tmp_1.s
+7F5 cinit CODE >480:C:\Users\basti\AppData\Local\Temp\xcAs564.\driver_tmp_1.s
+7F6 cinit CODE >481:C:\Users\basti\AppData\Local\Temp\xcAs564.\driver_tmp_1.s
+7F7 cinit CODE >482:C:\Users\basti\AppData\Local\Temp\xcAs564.\driver_tmp_1.s
+7F8 cinit CODE >483:C:\Users\basti\AppData\Local\Temp\xcAs564.\driver_tmp_1.s
+7F9 cinit CODE >486:C:\Users\basti\AppData\Local\Temp\xcAs564.\driver_tmp_1.s
+7FA cinit CODE >487:C:\Users\basti\AppData\Local\Temp\xcAs564.\driver_tmp_1.s
+7FB cinit CODE >488:C:\Users\basti\AppData\Local\Temp\xcAs564.\driver_tmp_1.s
+7FC cinit CODE >494:C:\Users\basti\AppData\Local\Temp\xcAs564.\driver_tmp_1.s
+7FC cinit CODE >496:C:\Users\basti\AppData\Local\Temp\xcAs564.\driver_tmp_1.s
+7FD cinit CODE >497:C:\Users\basti\AppData\Local\Temp\xcAs564.\driver_tmp_1.s
+697 text2 CODE >5:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
+697 text2 CODE >13:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
+698 text2 CODE >14:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
+69C text2 CODE >15:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
+69F text2 CODE >15:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
+6A1 text2 CODE >16:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
+6A3 text2 CODE >18:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
+6A7 text2 CODE >19:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
+6AA text2 CODE >19:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
+6AC text2 CODE >20:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
+6B0 text2 CODE >22:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
+6B2 text2 CODE >23:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
+6B8 text2 CODE >24:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
+6BA text2 CODE >25:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
+6BB text2 CODE >26:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
+6BC text2 CODE >26:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
+6C0 text2 CODE >26:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
+6C2 text2 CODE >27:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
+6C6 text2 CODE >25:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
+6CA text2 CODE >30:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
+6CB text2 CODE >30:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
+6CF text2 CODE >30:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
+6D1 text2 CODE >31:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
+6D3 text2 CODE >31:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
+6D7 text2 CODE >31:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
+6DB text2 CODE >32:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
+6DE text2 CODE >32:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
+6E1 text2 CODE >33:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
+6E2 text2 CODE >35:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
+6E3 text2 CODE >35:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
+6E7 text2 CODE >35:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
+6E9 text2 CODE >36:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
+6EF text2 CODE >38:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
+6F4 text2 CODE >39:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
+6F7 text2 CODE >39:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
+6F9 text2 CODE >40:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
+6FD text2 CODE >41:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
+63E text1 CODE >5:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awmod.c
+63E text1 CODE >12:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awmod.c
+63F text1 CODE >13:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awmod.c
+643 text1 CODE >14:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awmod.c
+646 text1 CODE >14:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awmod.c
+648 text1 CODE >15:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awmod.c
+64A text1 CODE >17:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awmod.c
+64E text1 CODE >18:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awmod.c
+651 text1 CODE >18:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awmod.c
+653 text1 CODE >19:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awmod.c
+659 text1 CODE >20:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awmod.c
+65B text1 CODE >21:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awmod.c
+65C text1 CODE >22:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awmod.c
+65D text1 CODE >22:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awmod.c
+661 text1 CODE >22:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awmod.c
+663 text1 CODE >23:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awmod.c
+667 text1 CODE >21:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awmod.c
+66B text1 CODE >26:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awmod.c
+66D text1 CODE >26:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awmod.c
+671 text1 CODE >26:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awmod.c
+675 text1 CODE >27:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awmod.c
+678 text1 CODE >27:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awmod.c
+67B text1 CODE >28:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awmod.c
+67C text1 CODE >28:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awmod.c
+680 text1 CODE >28:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awmod.c
+682 text1 CODE >29:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awmod.c
+688 text1 CODE >31:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awmod.c
+68D text1 CODE >32:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awmod.c
+690 text1 CODE >32:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awmod.c
+692 text1 CODE >33:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awmod.c
+696 text1 CODE >34:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awmod.c
+6FE maintext CODE >17:C:\jostin\PIC16F877A\project automation\led score boarrd 1.X\score_count_testy.X\score_count_testy.c
+6FE maintext CODE >19:C:\jostin\PIC16F877A\project automation\led score boarrd 1.X\score_count_testy.X\score_count_testy.c
+701 maintext CODE >20:C:\jostin\PIC16F877A\project automation\led score boarrd 1.X\score_count_testy.X\score_count_testy.c
+703 maintext CODE >21:C:\jostin\PIC16F877A\project automation\led score boarrd 1.X\score_count_testy.X\score_count_testy.c
+704 maintext CODE >22:C:\jostin\PIC16F877A\project automation\led score boarrd 1.X\score_count_testy.X\score_count_testy.c
+705 maintext CODE >23:C:\jostin\PIC16F877A\project automation\led score boarrd 1.X\score_count_testy.X\score_count_testy.c
+706 maintext CODE >24:C:\jostin\PIC16F877A\project automation\led score boarrd 1.X\score_count_testy.X\score_count_testy.c
+707 maintext CODE >25:C:\jostin\PIC16F877A\project automation\led score boarrd 1.X\score_count_testy.X\score_count_testy.c
+708 maintext CODE >28:C:\jostin\PIC16F877A\project automation\led score boarrd 1.X\score_count_testy.X\score_count_testy.c
+70E maintext CODE >30:C:\jostin\PIC16F877A\project automation\led score boarrd 1.X\score_count_testy.X\score_count_testy.c
+712 maintext CODE >31:C:\jostin\PIC16F877A\project automation\led score boarrd 1.X\score_count_testy.X\score_count_testy.c
+71F maintext CODE >32:C:\jostin\PIC16F877A\project automation\led score boarrd 1.X\score_count_testy.X\score_count_testy.c
+725 maintext CODE >34:C:\jostin\PIC16F877A\project automation\led score boarrd 1.X\score_count_testy.X\score_count_testy.c
+726 maintext CODE >36:C:\jostin\PIC16F877A\project automation\led score boarrd 1.X\score_count_testy.X\score_count_testy.c
+72A maintext CODE >38:C:\jostin\PIC16F877A\project automation\led score boarrd 1.X\score_count_testy.X\score_count_testy.c
+72C maintext CODE >39:C:\jostin\PIC16F877A\project automation\led score boarrd 1.X\score_count_testy.X\score_count_testy.c
+730 maintext CODE >41:C:\jostin\PIC16F877A\project automation\led score boarrd 1.X\score_count_testy.X\score_count_testy.c
+734 maintext CODE >42:C:\jostin\PIC16F877A\project automation\led score boarrd 1.X\score_count_testy.X\score_count_testy.c
+741 maintext CODE >43:C:\jostin\PIC16F877A\project automation\led score boarrd 1.X\score_count_testy.X\score_count_testy.c
+747 maintext CODE >45:C:\jostin\PIC16F877A\project automation\led score boarrd 1.X\score_count_testy.X\score_count_testy.c
+748 maintext CODE >47:C:\jostin\PIC16F877A\project automation\led score boarrd 1.X\score_count_testy.X\score_count_testy.c
+74C maintext CODE >49:C:\jostin\PIC16F877A\project automation\led score boarrd 1.X\score_count_testy.X\score_count_testy.c
+74E maintext CODE >50:C:\jostin\PIC16F877A\project automation\led score boarrd 1.X\score_count_testy.X\score_count_testy.c
+760 maintext CODE >51:C:\jostin\PIC16F877A\project automation\led score boarrd 1.X\score_count_testy.X\score_count_testy.c
+774 maintext CODE >52:C:\jostin\PIC16F877A\project automation\led score boarrd 1.X\score_count_testy.X\score_count_testy.c
+788 maintext CODE >53:C:\jostin\PIC16F877A\project automation\led score boarrd 1.X\score_count_testy.X\score_count_testy.c
+79C maintext CODE >54:C:\jostin\PIC16F877A\project automation\led score boarrd 1.X\score_count_testy.X\score_count_testy.c
+79D maintext CODE >55:C:\jostin\PIC16F877A\project automation\led score boarrd 1.X\score_count_testy.X\score_count_testy.c
+79E maintext CODE >56:C:\jostin\PIC16F877A\project automation\led score boarrd 1.X\score_count_testy.X\score_count_testy.c
+7A4 maintext CODE >57:C:\jostin\PIC16F877A\project automation\led score boarrd 1.X\score_count_testy.X\score_count_testy.c
+7AC maintext CODE >58:C:\jostin\PIC16F877A\project automation\led score boarrd 1.X\score_count_testy.X\score_count_testy.c
+7AF maintext CODE >59:C:\jostin\PIC16F877A\project automation\led score boarrd 1.X\score_count_testy.X\score_count_testy.c
+7B0 maintext CODE >60:C:\jostin\PIC16F877A\project automation\led score boarrd 1.X\score_count_testy.X\score_count_testy.c
+7B6 maintext CODE >61:C:\jostin\PIC16F877A\project automation\led score boarrd 1.X\score_count_testy.X\score_count_testy.c
+7BE maintext CODE >62:C:\jostin\PIC16F877A\project automation\led score boarrd 1.X\score_count_testy.X\score_count_testy.c
+7C1 maintext CODE >63:C:\jostin\PIC16F877A\project automation\led score boarrd 1.X\score_count_testy.X\score_count_testy.c
+7C2 maintext CODE >64:C:\jostin\PIC16F877A\project automation\led score boarrd 1.X\score_count_testy.X\score_count_testy.c
+7C8 maintext CODE >65:C:\jostin\PIC16F877A\project automation\led score boarrd 1.X\score_count_testy.X\score_count_testy.c
+7D0 maintext CODE >66:C:\jostin\PIC16F877A\project automation\led score boarrd 1.X\score_count_testy.X\score_count_testy.c
+7D3 maintext CODE >67:C:\jostin\PIC16F877A\project automation\led score boarrd 1.X\score_count_testy.X\score_count_testy.c
+7D4 maintext CODE >68:C:\jostin\PIC16F877A\project automation\led score boarrd 1.X\score_count_testy.X\score_count_testy.c
+7DA maintext CODE >69:C:\jostin\PIC16F877A\project automation\led score boarrd 1.X\score_count_testy.X\score_count_testy.c
+62B inittext CODE >440:C:\Users\basti\AppData\Local\Temp\xcAs564.\driver_tmp_1.s
+62B inittext CODE >441:C:\Users\basti\AppData\Local\Temp\xcAs564.\driver_tmp_1.s
+62C inittext CODE >442:C:\Users\basti\AppData\Local\Temp\xcAs564.\driver_tmp_1.s
+62D inittext CODE >443:C:\Users\basti\AppData\Local\Temp\xcAs564.\driver_tmp_1.s
+62E inittext CODE >444:C:\Users\basti\AppData\Local\Temp\xcAs564.\driver_tmp_1.s
+62F inittext CODE >451:C:\Users\basti\AppData\Local\Temp\xcAs564.\driver_tmp_1.s
+62F inittext CODE >452:C:\Users\basti\AppData\Local\Temp\xcAs564.\driver_tmp_1.s
+634 inittext CODE >453:C:\Users\basti\AppData\Local\Temp\xcAs564.\driver_tmp_1.s
+635 inittext CODE >454:C:\Users\basti\AppData\Local\Temp\xcAs564.\driver_tmp_1.s
+636 inittext CODE >455:C:\Users\basti\AppData\Local\Temp\xcAs564.\driver_tmp_1.s
+637 inittext CODE >456:C:\Users\basti\AppData\Local\Temp\xcAs564.\driver_tmp_1.s
+638 inittext CODE >457:C:\Users\basti\AppData\Local\Temp\xcAs564.\driver_tmp_1.s
+639 inittext CODE >458:C:\Users\basti\AppData\Local\Temp\xcAs564.\driver_tmp_1.s
+63A inittext CODE >459:C:\Users\basti\AppData\Local\Temp\xcAs564.\driver_tmp_1.s
+63B inittext CODE >460:C:\Users\basti\AppData\Local\Temp\xcAs564.\driver_tmp_1.s
+63C inittext CODE >461:C:\Users\basti\AppData\Local\Temp\xcAs564.\driver_tmp_1.s
+63D inittext CODE >462:C:\Users\basti\AppData\Local\Temp\xcAs564.\driver_tmp_1.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+_i 7B 0 COMMON 1 bssCOMMON dist/default/debug\score_count_testy.X.debug.o
+_j 2E 0 BANK0 1 bssBANK0 dist/default/debug\score_count_testy.X.debug.o
+_k 2D 0 BANK0 1 bssBANK0 dist/default/debug\score_count_testy.X.debug.o
+_l 2C 0 BANK0 1 bssBANK0 dist/default/debug\score_count_testy.X.debug.o
+_x 2B 0 BANK0 1 bssBANK0 dist/default/debug\score_count_testy.X.debug.o
+_y 2A 0 BANK0 1 bssBANK0 dist/default/debug\score_count_testy.X.debug.o
+___latbits 2 0 ABS 0 - dist/default/debug\score_count_testy.X.debug.o
+___awdiv@counter 74 0 COMMON 1 cstackCOMMON dist/default/debug\score_count_testy.X.debug.o
+__LdataBANK0 0 0 ABS 0 dataBANK0 -
+__Hspace_0 800 0 ABS 0 - -
+__Hspace_1 7E 0 ABS 0 - -
+__Hspace_2 0 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__Hspace_4 400F 0 ABS 0 - -
+__HidataBANK0 0 0 ABS 0 idataBANK0 -
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+__L__absolute__ 0 0 ABS 0 __absolute__ -
+__Hstrings 0 0 ABS 0 strings -
+___sp 0 0 STACK 2 stack C:\Users\basti\AppData\Local\Temp\xcAs564.\driver_tmp_12.o
+_main DFC 0 CODE 0 maintext dist/default/debug\score_count_testy.X.debug.o
+btemp 7E 0 ABS 0 - dist/default/debug\score_count_testy.X.debug.o
+___stack_hi 0 0 STACK 2 stack C:\Users\basti\AppData\Local\Temp\xcAs564.\driver_tmp_12.o
+___stack_lo 0 0 STACK 2 stack C:\Users\basti\AppData\Local\Temp\xcAs564.\driver_tmp_12.o
+start 0 0 CODE 0 init C:\Users\basti\AppData\Local\Temp\xcAs564.\driver_tmp_12.o
+__HbssCOMMON 0 0 ABS 0 bssCOMMON -
+_OPTION_REGbits 81 0 ABS 0 - dist/default/debug\score_count_testy.X.debug.o
+__LidataBANK0 0 0 ABS 0 idataBANK0 -
+__Hpowerup 0 0 CODE 0 powerup -
+___awmod@sign 75 0 COMMON 1 cstackCOMMON dist/default/debug\score_count_testy.X.debug.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\basti\AppData\Local\Temp\xcAs564.\driver_tmp_12.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\basti\AppData\Local\Temp\xcAs564.\driver_tmp_12.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\basti\AppData\Local\Temp\xcAs564.\driver_tmp_12.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\basti\AppData\Local\Temp\xcAs564.\driver_tmp_12.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\basti\AppData\Local\Temp\xcAs564.\driver_tmp_12.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\basti\AppData\Local\Temp\xcAs564.\driver_tmp_12.o
+__LbssCOMMON 0 0 ABS 0 bssCOMMON -
+wtemp0 7E 0 ABS 0 - dist/default/debug\score_count_testy.X.debug.o
+__Hfunctab 0 0 ENTRY 0 functab -
+___awdiv@sign 75 0 COMMON 1 cstackCOMMON dist/default/debug\score_count_testy.X.debug.o
+__Hclrtext 0 0 ABS 0 clrtext -
+___awdiv@dividend 72 0 COMMON 1 cstackCOMMON dist/default/debug\score_count_testy.X.debug.o
+__Lmaintext 0 0 ABS 0 maintext -
+___awdiv@divisor 70 0 COMMON 1 cstackCOMMON dist/default/debug\score_count_testy.X.debug.o
+__end_of___awdiv DFC 0 CODE 0 text2 dist/default/debug\score_count_testy.X.debug.o
+__end_of___awmod D2E 0 CODE 0 text1 dist/default/debug\score_count_testy.X.debug.o
+___stackhi 0 0 ABS 0 - C:\Users\basti\AppData\Local\Temp\xcAs564.\driver_tmp_12.o
+___stacklo 0 0 ABS 0 - C:\Users\basti\AppData\Local\Temp\xcAs564.\driver_tmp_12.o
+start_initialization FCC 0 CODE 0 cinit dist/default/debug\score_count_testy.X.debug.o
+___int_sp 0 0 STACK 2 stack C:\Users\basti\AppData\Local\Temp\xcAs564.\driver_tmp_12.o
+__Hbank0 0 0 ABS 0 bank0 -
+__Hbank1 0 0 ABS 0 bank1 -
+__Hbank2 0 0 ABS 0 bank2 -
+__Hbank3 0 0 ABS 0 bank3 -
+__Hcinit 1000 0 CODE 0 cinit -
+__Hstack 0 0 STACK 2 stack -
+__Hmaintext 0 0 ABS 0 maintext -
+__Hcommon 0 0 ABS 0 common -
+__Hconfig 4010 0 CONFIG 4 config -
+__Lbank0 0 0 ABS 0 bank0 -
+__Lbank1 0 0 ABS 0 bank1 -
+__Lbank2 0 0 ABS 0 bank2 -
+__Lbank3 0 0 ABS 0 bank3 -
+__Lcinit FCC 0 CODE 0 cinit -
+__Lstack 0 0 STACK 2 stack -
+__Linittext 0 0 ABS 0 inittext -
+_PORTCbits 7 0 ABS 0 - dist/default/debug\score_count_testy.X.debug.o
+_INTCONbits B 0 ABS 0 - dist/default/debug\score_count_testy.X.debug.o
+__Habs1 0 0 ABS 0 abs1 -
+__Hcode 0 0 ABS 0 code -
+__Hheap 0 0 HEAP 7 heap -
+__Hinit 0 0 CODE 0 init -
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Hsfr2 0 0 ABS 0 sfr2 -
+__Hsfr3 0 0 ABS 0 sfr3 -
+__Hsivt 0 0 CODE 0 sivt -
+__Htext 0 0 ABS 0 text -
+__Labs1 0 0 ABS 0 abs1 -
+__Lcode 0 0 ABS 0 code -
+__Lheap 0 0 HEAP 7 heap -
+__Linit 0 0 CODE 0 init -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+__Lsfr2 0 0 ABS 0 sfr2 -
+__Lsfr3 0 0 ABS 0 sfr3 -
+__Lsivt 0 0 CODE 0 sivt -
+__Ltext 0 0 ABS 0 text -
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__S0 800 0 ABS 0 - -
+__S1 7E 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+_seg 20 0 BANK0 1 dataBANK0 dist/default/debug\score_count_testy.X.debug.o
+__Lintentry 0 0 CODE 0 intentry -
+reset_vec 0 0 CODE 0 reset_vec C:\Users\basti\AppData\Local\Temp\xcAs564.\driver_tmp_12.o
+__pdataBANK0 20 0 BANK0 1 dataBANK0 dist/default/debug\score_count_testy.X.debug.o
+__LbssBANK0 0 0 ABS 0 bssBANK0 -
+___awmod@counter 74 0 COMMON 1 cstackCOMMON dist/default/debug\score_count_testy.X.debug.o
+___awdiv D2E 0 CODE 0 text2 dist/default/debug\score_count_testy.X.debug.o
+___awmod C7C 0 CODE 0 text1 dist/default/debug\score_count_testy.X.debug.o
+__pmaintext DFC 0 CODE 0 maintext dist/default/debug\score_count_testy.X.debug.o
+__Lcommon 0 0 ABS 0 common -
+__Lconfig 0 0 CONFIG 4 config -
+__Hinittext 0 0 ABS 0 inittext -
+_score1 7D 0 COMMON 1 bssCOMMON dist/default/debug\score_count_testy.X.debug.o
+_score2 7C 0 COMMON 1 bssCOMMON dist/default/debug\score_count_testy.X.debug.o
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_2 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__Lspace_4 0 0 ABS 0 - -
+__pbssCOMMON 7B 0 COMMON 1 bssCOMMON dist/default/debug\score_count_testy.X.debug.o
+init_fetch0 C56 0 CODE 0 inittext dist/default/debug\score_count_testy.X.debug.o
+__Lend_init 0 0 CODE 0 end_init -
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+end_of_initialization FF8 0 CODE 0 cinit dist/default/debug\score_count_testy.X.debug.o
+__Hintentry 0 0 CODE 0 intentry -
+__Lstrings 0 0 ABS 0 strings -
+___awdiv@quotient 76 0 COMMON 1 cstackCOMMON dist/default/debug\score_count_testy.X.debug.o
+?___awdiv 70 0 COMMON 1 cstackCOMMON dist/default/debug\score_count_testy.X.debug.o
+?___awmod 70 0 COMMON 1 cstackCOMMON dist/default/debug\score_count_testy.X.debug.o
+__Hreset_vec 0 0 CODE 0 reset_vec -
+__HbssBANK0 0 0 ABS 0 bssBANK0 -
+___awmod@dividend 72 0 COMMON 1 cstackCOMMON dist/default/debug\score_count_testy.X.debug.o
+__ptext1 C7C 0 CODE 0 text1 dist/default/debug\score_count_testy.X.debug.o
+__ptext2 D2E 0 CODE 0 text2 dist/default/debug\score_count_testy.X.debug.o
+__Lpowerup 0 0 CODE 0 powerup -
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+__H__absolute__ 0 0 ABS 0 __absolute__ -
+__Lreset_vec 0 0 CODE 0 reset_vec -
+___heap_hi 0 0 ABS 0 - C:\Users\basti\AppData\Local\Temp\xcAs564.\driver_tmp_12.o
+___heap_lo 0 0 ABS 0 - C:\Users\basti\AppData\Local\Temp\xcAs564.\driver_tmp_12.o
+__end_of__initialization FF8 0 CODE 0 cinit dist/default/debug\score_count_testy.X.debug.o
+___awmod@divisor 70 0 COMMON 1 cstackCOMMON dist/default/debug\score_count_testy.X.debug.o
+__Lfunctab 0 0 ENTRY 0 functab -
+__pidataBANK0 C42 0 CODE 0 idataBANK0 dist/default/debug\score_count_testy.X.debug.o
+__Lclrtext 0 0 ABS 0 clrtext -
+__pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/debug\score_count_testy.X.debug.o
+__Hend_init 6 0 CODE 0 end_init -
+init_ram0 C5E 0 CODE 0 inittext dist/default/debug\score_count_testy.X.debug.o
+__end_of_main FCC 0 CODE 0 maintext dist/default/debug\score_count_testy.X.debug.o
+_PORTB 6 0 ABS 0 - dist/default/debug\score_count_testy.X.debug.o
+_PORTD 8 0 ABS 0 - dist/default/debug\score_count_testy.X.debug.o
+_TRISB 86 0 ABS 0 - dist/default/debug\score_count_testy.X.debug.o
+_TRISC 87 0 ABS 0 - dist/default/debug\score_count_testy.X.debug.o
+_TRISD 88 0 ABS 0 - dist/default/debug\score_count_testy.X.debug.o
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+__HdataBANK0 0 0 ABS 0 dataBANK0 -
+__initialization FCC 0 CODE 0 cinit dist/default/debug\score_count_testy.X.debug.o
+__pbssBANK0 2A 0 BANK0 1 bssBANK0 dist/default/debug\score_count_testy.X.debug.o
+___int_stack_hi 0 0 STACK 2 stack C:\Users\basti\AppData\Local\Temp\xcAs564.\driver_tmp_12.o
+___int_stack_lo 0 0 STACK 2 stack C:\Users\basti\AppData\Local\Temp\xcAs564.\driver_tmp_12.o
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+cinit 0 7E6 FCC 1A 2
+text1 0 63E C7C 59 2
+text2 0 697 D2E 67 2
+maintext 0 6FE DFC E8 2
+cstackCOMMON 1 70 70 E 1
+inittext 0 62B C56 13 2
+reset_vec 0 0 0 3 2
+idataBANK0 0 621 C42 A 2
+dataBANK0 1 20 20 F 1
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES

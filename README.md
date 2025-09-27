@@ -4,8 +4,6 @@ This repository contains the firmware for a versatile digital display system bui
 
 The system features a 4-digit 7-segment display and can be compiled to operate in one of two distinct modes: a two-team **Scoreboard** or a configurable **Countdown/Count-up Timer**.
 
-![A photo of the completed digital scoreboard project](https://via.placeholder.com/600x400.png?text=Your+Project+Image+Here)
-*(A high-quality photo of your finished project here will make a great first impression!)*
 
 ## Features
 
